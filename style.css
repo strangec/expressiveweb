@@ -1,0 +1,20 @@
+
+body {
+  background-color:#c9ebff;
+  color:#5beed1;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+  font-size: 2rem;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color:#5beed1;
+}
