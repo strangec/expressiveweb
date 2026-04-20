@@ -23,11 +23,6 @@ async function fetchFirstSynonym(word) {
 }
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message?.type === "PING") {
-    sendResponse({ ok: true, message: "pong" });
-    return true;
-  }
-
   if (message?.type === "SYNONYMIZE_ACTIVE_TAB") {
     (async () => {
       const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
